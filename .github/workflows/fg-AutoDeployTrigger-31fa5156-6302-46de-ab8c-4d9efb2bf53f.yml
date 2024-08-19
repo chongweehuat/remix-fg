@@ -30,6 +30,7 @@ jobs:
           client-id: ${{ secrets.FG_AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.FG_AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.FG_AZURE_SUBSCRIPTION_ID }}
+          enable-federated-credentials: true
 
       - name: Build and push container image to registry
         uses: azure/container-apps-deploy-action@v2
