@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "build": "remix vite:build",
-    "devfg6": "remix vite:dev --port 3666 --host 0.0.0.0",
+    "devfg": "remix vite:dev --port 3666 --host 0.0.0.0",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
-    "start": "remix-serve ./build/server/index.js",
+    "startfg": "remix-serve ./build/server/index.js",
     "typecheck": "tsc",
     "postinstall": "mkdir -p public/styles && cp node_modules/flowbite/dist/flowbite.css public/styles/flowbite.css"
   },
